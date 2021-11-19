@@ -1,0 +1,176 @@
+######################################################################################################
+# General
+######################################################################################################
+
+Resources:
+
+	- https://www.youtube.com/playlist?list=PLL6fCAGvk5rbVYleS86TCdTCrX7N7Zi0n
+
+
+State Space / State Graph:
+	- give an example:
+		- of what a state is: with the 8-block problem
+		- of those terms with a simple tree
+			- n => node from the state graph / state from the state space
+			- b => branching factor
+			- m => maximum depth
+			- d => depth of shallowest goal
+			- Where are these explained? Topic ???, Page ???
+
+
+######################################################################################################
+# Task 1
+######################################################################################################
+
+	- Answer (table): Topic ???, Page ???
+	
+	- Classical Searching:
+	
+		- A search algorithm is complete if it is guaranteed to find a solution if there is one.
+		- A search algorithm is optimal for some cost constraint if it can find a solution and that solution minimizes that cost g(n). If the algorithm is optimal, than it must be complete.
+			- g(n) # The cost from start to current_state.
+				- not a heuristic, because it doesn't tell us anything about the goal state(s).
+					- heuristic: A metric that gives information about the goal state(s).
+				- if current_state == goal: g(n) is named C*
+
+		- uninformed (blind) (access only to the problem definition):
+
+			- DFS (depth-first search) <= Moto: "Go as deep as you can!":
+
+				- DLS (Depth-Limited Search):				
+					- we use a cutoff line, limiting the searching to depth l
+
+				- IDS (Iterative-Deepening):
+					- use this if a lot of states and you don't know the depth of the goal
+					- Problem: What if b = inf ???
+				
+				- Problems:
+					- Path is not guaranteed to be the cheapest.
+					- What if m = inf ?
+					- What if b == inf ?
+
+			- UCS (Uniform-Cost search) <= Moto: "Cheaper is better!":
+
+				- Sorts frontier according to g(n).
+					- Guaranteed to produce the cheapest path.
+
+				- If g(n) == 1 for all n, then we get ???!				
+					- Problem: What if b = inf ?
+				
+				- Problem:
+					- Frontier can become too big.
+
+		- informed:
+
+			- h(n) # The cost from current_state to finish.
+				- heuristic!!
+				- 0 < h(n) <= real_cost
+
+			- Best-First search:
+				- uniform-cost search but for h(n)
+				- expands node with min h(n)
+
+			- A* search:
+				- if you can, ALWAYS use this
+				- f(n) = h(n) + g(n)
+
+
+	- Beyond Classical Searching:
+		- Hill climbing:
+			- expands only the best node, without keeping track of anything, i.e. frontier or path cost.
+
+		- Beam search:
+			- Hill climging but keeps the best k paths in a frontier.
+
+
+	- Final notes:
+		- What is the difference between Hill climbing vs. Beam search vs. Best-first search?
+
+
+######################################################################################################
+# Task 2
+######################################################################################################
+
+a -> Topic ???, page ???, answer=???
+b -> Topic ???, page ???, answer=???
+c -> Topic ???, page ???, answer=???
+
+
+######################################################################################################
+# Task 3
+######################################################################################################
+
+Topic: ???
+	- minimax stars from page ???
+	- alpha-beta stars from page ???
+
+Adversial Search === Games
+	- Mini-max
+		- DFS
+		- Alpha-beta:
+			- go DFS till leaf nodes putting -inf for alpha and +inf for beta
+			- if alpha is parent and alpha > beta => PRUNE
+			- if beta is parent and alpha > beta => PRUNE
+			- only when you get a concrete value for a node do you offer it upwards
+
+
+######################################################################################################
+# Task 4
+######################################################################################################
+
+Topic: ???
+	- definitions for selection and crossover: ???
+	- definitions for mutation: ???
+	- example of single-point crossover: page ???
+	- example of double crossover: page ???, ???
+	- example of arithmetic crossover: page ???
+	- example of mutation: page ???
+
+Genetic algorithms:
+	- variant of stochastic beam search - new states are "bred" of old states.
+	- selection.
+	- crossover.
+	- mutation.
+
+Example:
+	p1=???
+	p2=???
+	
+	c1=???
+	c2=???
+
+
+######################################################################################################
+# Task 5
+######################################################################################################
+
+answer:???, why? ???. Topic ???, page ???
+
+
+######################################################################################################
+# Task 6
+######################################################################################################
+
+Topic ???
+
+Types of constraints: Page ???
+
+Backtracking: ???
+
+Arc Consistency-3: Page ???
+
+
+######################################################################################################
+# Task 7
+######################################################################################################
+
+Topic ???
+Page ???
+
+######################################################################################################
+# Task 8
+######################################################################################################
+
+Topic ???
+Page ???
+
