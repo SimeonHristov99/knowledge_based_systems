@@ -4,5 +4,5 @@ Resources complimenting additional practice hours for the course "Knowledge-Base
 
 Plan of attack:
 
-[ ] Solve sample theory exam.
-[ ] Solve the Knapsack Problem.
+- [ ] Solve sample theory exam.
+- [ ] Solve the Knapsack Problem.
