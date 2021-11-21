@@ -15,14 +15,14 @@ State Space / State Graph:
 			- b => branching factor
 			- m => maximum depth
 			- d => depth of shallowest goal
-			- Where are these explained? Topic ???, Page ???
+			- Where are these explained? Topic 2.2, Page 29
 
 
 ######################################################################################################
 # Task 1
 ######################################################################################################
 
-	- Answer (table): Topic ???, Page ???
+	- Answer (table): Topic 2.2, Page 29
 	
 	- Classical Searching:
 	
@@ -42,7 +42,8 @@ State Space / State Graph:
 
 				- IDS (Iterative-Deepening):
 					- use this if a lot of states and you don't know the depth of the goal
-					- Problem: What if b = inf ???
+					- Problem: What if b = inf?
+						Yes, because we would need infinite time to search level 1.
 				
 				- Problems:
 					- Path is not guaranteed to be the cheapest.
@@ -54,7 +55,7 @@ State Space / State Graph:
 				- Sorts frontier according to g(n).
 					- Guaranteed to produce the cheapest path.
 
-				- If g(n) == 1 for all n, then we get ???!				
+				- If g(n) == 1 for all n, then we get BFS!
 					- Problem: What if b = inf ?
 				
 				- Problem:
@@ -91,18 +92,18 @@ State Space / State Graph:
 # Task 2
 ######################################################################################################
 
-a -> Topic ???, page ???, answer=???
-b -> Topic ???, page ???, answer=???
-c -> Topic ???, page ???, answer=???
+a -> Topic 2.2, page 18, answer=(s a b c g)
+b -> Topic 3, page 6, answer=(s d e g)
+c -> Topic 3, page 17, answer=(s a b c g)
 
 
 ######################################################################################################
 # Task 3
 ######################################################################################################
 
-Topic: ???
-	- minimax stars from page ???
-	- alpha-beta stars from page ???
+Topic: 5
+	- minimax stars from page 4
+	- alpha-beta stars from page 12
 
 Adversial Search === Games
 	- Mini-max
@@ -118,13 +119,54 @@ Adversial Search === Games
 # Task 4
 ######################################################################################################
 
-Topic: ???
-	- definitions for selection and crossover: ???
-	- definitions for mutation: ???
-	- example of single-point crossover: page ???
-	- example of double crossover: page ???, ???
-	- example of arithmetic crossover: page ???
-	- example of mutation: page ???
+Topic: 4
+	- definitions for selection and crossover: 4
+	- definitions for mutation: 5
+	- example of single-point crossover: page 8, 10
+	- example of double crossover: page 11, 16
+	- example of arithmetic crossover: page 12
+	- example of mutation: page 18
+
+Laptop 500 2.5
+Phone 1500 0.5
+Headphones 600 0.1
+
+max_kg = 2
+
+Population
+individual=[1, 1, 1] => fitness=0
+individual=[0, 0, 0] => fitness=0
+individual=[0, 0, 1] => fitness=600
+
+Single-point:
+p1=[0, 0, 1]
+p2=[1, 1, 1]
+    ^
+
+c1=[1, 0, 1]
+c2=[0, 1, 1]
+
+Double-point:
+p1=[0, 0, 1, 0, 0, 1, 1, 0]
+p2=[1, 1, 1, 1, 1, 1, 0, 0]
+          ^           ^
+
+c1=[1, 1, 1, 0, 0, 1, 1, 0]
+c2=[0, 0, 1, 1, 1, 1, 0, 0]
+
+Arithmetic:
+p1=[0, 0, 1, 0, 0, 1, 1, 0]
+p2=[1, 1, 1, 1, 1, 1, 0, 0]
+
+c1=[0, 0, 1, 0, 0, 1, 0, 0]
+c2=[1, 1, 1, 1, 1, 1, 1, 0]
+
+Mutation:
+c1=[1, 0, 1]
+c2=[0, 1, 1]
+
+mc1=[1, 0, 1]
+mc2=[1, 0, 1]
 
 Genetic algorithms:
 	- variant of stochastic beam search - new states are "bred" of old states.
@@ -132,45 +174,37 @@ Genetic algorithms:
 	- crossover.
 	- mutation.
 
-Example:
-	p1=???
-	p2=???
-	
-	c1=???
-	c2=???
-
 
 ######################################################################################################
 # Task 5
 ######################################################################################################
 
-answer:???, why? ???. Topic ???, page ???
+answer:b, why? no frontier. Topic 3, page 14
 
 
 ######################################################################################################
 # Task 6
 ######################################################################################################
 
-Topic ???
+Topic 6
 
-Types of constraints: Page ???
+Types of constraints: Page 7
 
-Backtracking: ???
+Backtracking: 13
 
-Arc Consistency-3: Page ???
+Arc Consistency-3: Page 29
 
 
 ######################################################################################################
 # Task 7
 ######################################################################################################
 
-Topic ???
-Page ???
+Topic 8
+Page 11
 
 ######################################################################################################
 # Task 8
 ######################################################################################################
 
-Topic ???
-Page ???
-
+Topic 8
+Page 12
