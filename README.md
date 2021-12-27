@@ -6,3 +6,8 @@ Plan of attack for session 1:
 
 - [X] Solve sample theory exam.
 - [X] Solve the Knapsack Problem.
+
+Plan of attack for session 2:
+
+- [X] Explain the idea of KNN.
+- [X] Create a model that predicts a drug based on patient features.
