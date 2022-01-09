@@ -1,0 +1,104 @@
+Task 1:
+    Topic: ???
+    Examples: Page: ???
+
+    Types of Nodes:
+        Page: ???
+
+        Example of relational: ??? (everthing that is pointed by an edge)
+        Example of object: ??? (only arcs come out)
+    
+    Types of Arcs:
+        Page: ???
+
+        Example of subset: ???
+        Example of element: ???
+        Example of function: ???
+
+Task 2:
+    Topic: ???
+    Definition for a semantic net: ???
+    Definition for a partitioned semantic net: ???
+    When do we use semantic nets?
+        When sentence does not contains quantifiers (all, every, some, any),
+        but only words like "a" and "the"
+    When do we use partitioned semantic nets?
+        When sentence contains quantifiers (all, every, some, any)
+
+    Keywords:
+        is-a
+        agent: object of a positive action
+        beneficiary: subject of a positive action
+        assailant: object of a negative action
+        victim: subject of a negative action
+        SA (Scene Area): Holds all scenes
+        Si (scene) (semantic net)
+        form: points to a scene
+        quantifier (every, all, some): points to the node(s) it is for
+
+    Create semantic nets for the following sentences:
+
+    1. The dog bit the mail carrier.
+    2. Every dog has bitten a mail carrier.
+    3. Every dog in town has bitten the constable.
+    4. Every dog has bitten every mail carrier.
+    5. Every player kicked a ball.
+
+    (HW) All players liked the referee.
+    (HW) Some dogs ate all bones.
+    (HW) All Englishmen like the Queen.
+
+    Don't forget: Only relational constants without "the"
+    go into the partitioned semantic network!
+
+Task 3, 4:
+    Definition for frame: Topic ???, Page ???
+
+    - self-information (frame name, isa relations)
+    - slots (instance characteristics (color, cover, has_part))
+    - facets (values or methods for the slots (white, hair))
+        - ???
+        - ???
+        - ???
+        - ???
+        - ???
+
+    (clyde (isa (value elephant)) (color (value white)))
+
+    Don't forget: If a facet is not present, it means that
+    it's value is null!
+
+Task 5:
+    Topic: ???
+
+    Answer: ???
+
+    С кои възли в Бейсовата мрежа, представена на фигурата, се асоциират таблици с условни вероятности?
+        с възлите, които имат предшественици
+    
+    Видове извод в БМ: ???
+    
+    Диагностика:
+        от следствието към причината
+        вероятност да се е случило нещо отгоре, ако се е случило нещо отдолу
+    Предсказване:
+        от причината към следствието
+        вероятност да се е случило нещо отдолу, ако се е случило нещо отгоре
+    Междупричинен извод:
+        между причините за дадено следствие
+        вероятност между възлите на дадено ниво
+    Смесен извод:
+        комбинация на горните три
+
+Task 7:
+    Topic: ???
+
+Tasks 6, 8:
+    Topic: ???
+    Answer: ???
+
+Task 9:
+    Topic: ???
+
+Task 10:
+    Topic: ???

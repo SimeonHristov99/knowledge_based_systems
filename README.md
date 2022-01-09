@@ -11,3 +11,7 @@ Plan of attack for session 2:
 
 - [X] Explain the idea of KNN.
 - [X] Create a model that predicts a drug based on patient features.
+
+Plan of attack for session 3:
+
+- [ ] Solve sample theory exam.
