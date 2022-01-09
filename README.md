@@ -14,4 +14,4 @@ Plan of attack for session 2:
 
 Plan of attack for session 3:
 
-- [ ] Solve sample theory exam.
+- [X] Solve sample theory exam.
